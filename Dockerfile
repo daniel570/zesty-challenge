@@ -17,7 +17,7 @@ COPY . /app
 ENV PORT=5050
 ENV AWS_ACCESS_KEY_ID=""
 ENV AWS_SECRET_ACCESS_KEY=""
-ENV AWS_DEFAULT_REGION=""
+ENV AWS_REGION=""
 
 # Expose the port that the app will run on
 EXPOSE $PORT
