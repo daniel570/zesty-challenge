@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # Create DynamoDB client
 dynamodb = boto3.client('dynamodb',
-                        endpoint_url='http://localhost:8000',
+                        endpoint_url='http://dynamodb:8000',
                         aws_access_key_id=aws_access_key_id,
                         aws_secret_access_key=aws_secret_access_key,
                         region_name=region_name)

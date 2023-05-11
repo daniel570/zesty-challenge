@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    image: daniel570/zesty-challenge:latest
+    ports:
+      - 5050:5050
+    depends_on:
+      - dynamodb
+
+  dynamodb:
+    image: zestyco/dynamodb-challenge:amd
+    ports:
+      - 8000:8000
+
