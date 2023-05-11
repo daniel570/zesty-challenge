@@ -15,6 +15,10 @@ dynamodb = boto3.client('dynamodb',
                         aws_secret_access_key=aws_secret_access_key,
                         region_name=region_name)
 
+@app.route('/')
+def home():
+    return "Welcome to The Doctor App!"
+
 @app.route('/health')
 def health():
     response = {
