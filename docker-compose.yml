@@ -6,6 +6,8 @@ services:
       - 5050:5050
     depends_on:
       - dynamodb
+    env_file:
+      - .env
 
   dynamodb:
     image: zestyco/dynamodb-challenge:amd

@@ -14,10 +14,12 @@ To get started with the Doctor, follow the steps below:
 
 2. Navigate to the project directory.
 
-3. Set environment variables for AWS cli credentials, to be used by the app (you may use dummy values for ID and key since this is a local DB):
-   export AWS_ACCESS_KEY_ID=""
-   export AWS_SECRET_ACCESS_KEY=""
-   export AWS_REGION="us-east-1"
+3. Edit the .env file and set the environment variables for AWS cli credentials and the DynamoDB table name and code name, to be used by the app (you may use dummy values for ID and key since this is a local DB):
+   AWS_ACCESS_KEY_ID = "your_access_key_id"
+   AWS_SECRET_ACCESS_KEY = "your_secret_access_key"
+   AWS_REGION = "us-east-1"
+   TABLE_NAME = "dynamodb_table_name"
+   CODE_NAME = "dynamodb_code_name"
 
 4. Pull Docker images and start the services by running the following command:
 

@@ -5,6 +5,8 @@ import os
 aws_access_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
 aws_secret_access_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
 region_name = os.environ.get("AWS_REGION")
+table_name = os.environ.get("TABLE_NAME")
+code_name = os.environ.get("CODE_NAME")
 
 app = Flask(__name__)
 
@@ -29,8 +31,6 @@ def health():
 
 @app.route('/secret')
 def secret():
-    table_name = 'devops-challenge'
-    code_name = 'theDoctor'
 
     # Retrieve the item from DynamoDB
     response = dynamodb.get_item(
