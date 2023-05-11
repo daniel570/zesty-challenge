@@ -30,7 +30,8 @@ This command will pull the Docker image for the application and local DynamoDB a
 
 Once the services are running, you can access the application at http://localhost:5050
 
-Endpoints
+## Endpoints
+
 The application exposes the following endpoints:
 
 /health: Returns a JSON response indicating the health of the application.
@@ -38,5 +39,6 @@ The application exposes the following endpoints:
 /secret: Retrieves the secret string from the DynamoDB table and presents it in the response.
 
 
-Scaling
+## Scaling
+
 This project focuses on running the application and DynamoDB locally for development and testing purposes. When deploying to production or for higher scalability, you'll need to consider appropriate scaling strategies for both the application and DynamoDB, such as using AWS services like Amazon ECS, Amazon EKS, or Amazon DynamoDB Streams.
